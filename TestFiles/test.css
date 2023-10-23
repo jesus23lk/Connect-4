@@ -1,0 +1,105 @@
+body {
+  text-align: center;
+  background-color: rgb(220, 220, 220);
+  margin: auto;
+}
+
+#header-div {
+  margin: 0 auto;
+  background-color: black;
+  color: black;
+  height: 80px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30px 50px;
+  column-gap: 2px;
+}
+
+.sec {
+  padding: 5px;
+  background-color: white;
+}
+
+#t-left, #t-right {
+  font-size: 20px;
+}
+
+#t-left {
+  padding-right: 40px;
+  text-align: right;
+}
+
+#t-right {
+  padding-left: 40px;
+  text-align: left;
+}
+
+#b-left, #b-right {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#b-left {
+  justify-content: right;
+  padding-right: 40px;
+}
+
+#b-right {
+  justify-content: left;
+  padding-left: 40px;
+}
+
+#board {
+  height: 480px;
+  width: 560px;
+  background-color: rgb(61, 101, 231);
+  grid-template-columns: repeat(7, 1fr);
+  margin: auto;
+  display: grid;
+  border-style: ridge;
+  border-width: 10px;
+  border-radius: 7px;
+  border-color: rgb(5, 5, 123);
+}
+
+#play-again {
+  background-color: black;
+  font-size: 25px;
+  color: white;
+  margin: auto;
+  margin-top: 15px;
+  height: 100px;
+  width: 225px;
+  border-radius: 10px;
+  border-width: 3px;
+  cursor: pointer;
+  display: none;
+}
+
+#play-again:hover {
+  color: gray;
+}
+
+.col {
+  display: grid;
+}
+
+.loc {
+  background-color: white;
+  height: 75%;
+  width: 75%;
+  border: solid;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+#board .col:hover {
+  background-color: blue;
+}
